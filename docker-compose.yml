@@ -1,0 +1,24 @@
+services:
+  web:
+    image: rctools_web
+    build: 
+      context: frontend
+    environment:
+      - REACT_APP_BE=backend:5000
+    ports:
+      - 3000:3000
+    container_name: rctools_web_c
+    networks:
+      - rctools
+  backend:
+    image: rctools_backend
+    build: 
+      context: backend
+    container_name: rctools_backend_c
+    ports:
+      - 5000:5000
+    networks:
+      - rctools
+
+networks:
+  rctools:

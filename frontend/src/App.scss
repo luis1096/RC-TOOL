@@ -1,0 +1,40 @@
+.row {
+  @apply mb-2;
+
+  .card {
+    @apply text-center;
+  }
+}
+
+.btn {
+  @apply mt-3;
+}
+
+.extruder-btn {
+  .btn {
+    @apply mx-2;
+    @apply w-14;
+  }
+}
+
+.temp-btn {
+  .btn {
+    @apply mx-2;
+    @apply w-14;
+  }
+}
+
+.temp-card {
+  @apply left-14;
+  @apply top-16;
+}
+
+.extrude-card {
+  @apply left-32;
+  @apply top-16;
+}
+
+.data-card {
+  @apply left-32;
+  @apply top-24;
+}

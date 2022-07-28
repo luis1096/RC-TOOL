@@ -3,6 +3,8 @@ import sys
 import time
 import serial
 
+
+
 from config import BAUDRATE, DRIVER
 
 class Printer:

@@ -1,6 +1,6 @@
-**RC Tools**
+**RC Tools Backend**
 ===========================
-REST API built with React and Flask framework.
+REST API built with Flask microframework.
 
 <details open="open">
   <summary>Table of Contents</summary>
@@ -11,27 +11,58 @@ REST API built with React and Flask framework.
     <li>
         <a href="#notes">Notes</a>
     </li>
+    <li>
+        <a href="#progress">  In Progress </a>
+    </li>
   </ul>
 </details>
 
 <span id="getting-started">**Getting Started**</span>
 ----------------------------
 
-### Docker
+### Backend
 
-Run docker container
+Creates a virtual environment
 ```bash
-# docker v1
-docker-compose up --build -d
-
-# docker v2
-docker compose up --build -d
+python -m venv env
 ```
 
-frontend -> 3000 \
-backend -> 5000
+Activates the environment
+
+windows
+```bash
+./env/Scripts/activate
+```
+
+linux / mac 
+```bash
+. env/bin/activate
+```
+
+Installing dependencies
+```
+pip install -r requirements.txt
+```
+
+Starts flask server
+```
+python ./app.py
+```
 
 <span id="notes">**Notes**</span>
 --------
 <hr>
-If you want to run the project w/o docker, run the projects individually. Look at the README.md for backend and frontend for more help.
+
+> If you want to change the baudrate 
+1. Copy and paste the .env.example file and rename it to .env. 
+2. Change the BAUDRATE variable in .env
+
+The backend start on port 5000
+
+
+<span id="progress">**In Progress**</span>
+--------
+<hr>
+
+* CORS
+* Routes
